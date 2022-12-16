@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		437C62DE294CD0EC00CC8CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C62DD294CD0EC00CC8CB2 /* AppDelegate.swift */; };
 		437C62E0294CD0EC00CC8CB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C62DF294CD0EC00CC8CB2 /* SceneDelegate.swift */; };
-		437C62E2294CD0EC00CC8CB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C62E1294CD0EC00CC8CB2 /* ViewController.swift */; };
 		437C62E5294CD0EC00CC8CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437C62E3294CD0EC00CC8CB2 /* Main.storyboard */; };
 		437C62E7294CD0ED00CC8CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437C62E6294CD0ED00CC8CB2 /* Assets.xcassets */; };
 		437C62EA294CD0ED00CC8CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437C62E8294CD0ED00CC8CB2 /* LaunchScreen.storyboard */; };
 		437C62F5294CD0ED00CC8CB2 /* cardWorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C62F4294CD0ED00CC8CB2 /* cardWorkoutTests.swift */; };
 		437C62FF294CD0ED00CC8CB2 /* cardWorkoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C62FE294CD0ED00CC8CB2 /* cardWorkoutUITests.swift */; };
 		437C6301294CD0ED00CC8CB2 /* cardWorkoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C6300294CD0ED00CC8CB2 /* cardWorkoutUITestsLaunchTests.swift */; };
+		437C6310294CD22D00CC8CB2 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C630F294CD22D00CC8CB2 /* CardSelectionVC.swift */; };
+		437C6312294CE76C00CC8CB2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C6311294CE76C00CC8CB2 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		437C62DA294CD0EC00CC8CB2 /* cardWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		437C62DD294CD0EC00CC8CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		437C62DF294CD0EC00CC8CB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		437C62E1294CD0EC00CC8CB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		437C62E4294CD0EC00CC8CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		437C62E6294CD0ED00CC8CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		437C62E9294CD0ED00CC8CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		437C62FA294CD0ED00CC8CB2 /* cardWorkoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cardWorkoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		437C62FE294CD0ED00CC8CB2 /* cardWorkoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardWorkoutUITests.swift; sourceTree = "<group>"; };
 		437C6300294CD0ED00CC8CB2 /* cardWorkoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardWorkoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		437C630F294CD22D00CC8CB2 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		437C6311294CE76C00CC8CB2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 			children = (
 				437C62DD294CD0EC00CC8CB2 /* AppDelegate.swift */,
 				437C62DF294CD0EC00CC8CB2 /* SceneDelegate.swift */,
-				437C62E1294CD0EC00CC8CB2 /* ViewController.swift */,
+				437C630F294CD22D00CC8CB2 /* CardSelectionVC.swift */,
+				437C6311294CE76C00CC8CB2 /* Card.swift */,
 				437C62E3294CD0EC00CC8CB2 /* Main.storyboard */,
 				437C62E6294CD0ED00CC8CB2 /* Assets.xcassets */,
 				437C62E8294CD0ED00CC8CB2 /* LaunchScreen.storyboard */,
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437C62E2294CD0EC00CC8CB2 /* ViewController.swift in Sources */,
 				437C62DE294CD0EC00CC8CB2 /* AppDelegate.swift in Sources */,
 				437C62E0294CD0EC00CC8CB2 /* SceneDelegate.swift in Sources */,
+				437C6310294CD22D00CC8CB2 /* CardSelectionVC.swift in Sources */,
+				437C6312294CE76C00CC8CB2 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +449,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +478,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
